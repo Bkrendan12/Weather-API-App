@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgb(138, 99, 48);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/Users/brendankurbkylo/Desktop/Homework/Weather-API-App/assets/images/foggy-forest.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  height: 1800px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  width: 100%;
+  border-radius: 7px;
+  height: auto;
+  background-color: antiquewhite;
+  opacity: 70%;
+  text-align: center;
+  border: solid 45px antiquewhite;
+}
+
+.form-container {
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: antiquewhite;
+  border: none;
+}
+.card-header {
+  background-color: antiquewhite;
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: antiquewhite;
+}
+
+.results {
+  border: solid rgb(218, 170, 107) 3px;
+  padding: 20px;
+  border-radius: 7px;
+  margin: 20px;
+}
+
+.cityDiv {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 5px 15px 5px 15px;
+  font-size: 25px;
+}
+
+.fiveDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  background-color: rgb(206, 158, 99);
+  border: solid 10px antiquewhite;
+}
+
+/* buttons */
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  margin: 15px;
+  width: 80%;
+  background-color: rgb(108, 96, 25);
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgb(57, 41, 18);
+  cursor: pointer;
+  color: rgb(218, 170, 107);
+  opacity: 50%;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
+
+.btnCity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  margin: 15px;
+  height: 30px;
+  width: 80%;
+  background-color: rgb(108, 96, 25);
+  outline: none;
+  border: none;
+}
+
+.btnCity:hover {
+  background-color: rgb(57, 41, 18);
+  cursor: pointer;
+  color: rgb(218, 170, 107);
+  opacity: 50%;
+  transition: transform 150ms;
+  transform: scale(1.03);
+}
