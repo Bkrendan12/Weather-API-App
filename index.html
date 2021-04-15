@@ -32,14 +32,14 @@
     <title>Weather-App</title>
   </head>
   <body>
-    <main class="container flex-row">
+    <main class="container col">
       <div class="main-container">
         <div class="row form-container">
           <form class="col-sm-3 card-body">
-            <div class="col-md-3">
+            <div class="col-md-3 city-text-div">
               <label type="text" for="inputCity" class="city-label-text"
-                >City</label
-              >
+                >Enter city:
+              </label>
               <input type="text" class="input-value" id="inputCity" />
             </div>
 
@@ -56,30 +56,9 @@
           </form>
 
           <div class="card">
-            <h3 class="card-header text-uppercase">Popular Cities</h3>
+            <h3 class="card-header">Popular Cities</h3>
             <div id="city-buttons" class="card-body">
-              <button type="button" data-city="boston" class="btnCity">
-                Boston
-              </button>
-              <button type="button" data-city="NY-city" class="btnCity">
-                New York
-              </button>
-              <button type="button" data-city="nashville" class="btnCity">
-                Nashville
-              </button>
-              <button type="button" data-city="chicago" class="btnCity">
-                Chicago
-              </button>
-              <button type="button" data-city="austin" class="btnCity">
-                Austin
-              </button>
-              <button type="button" data-city="san-diego" class="btnCity">
-                San Diego
-              </button>
-              <button type="button" data-city="los-angeles" class="btnCity">
-                Los Angeles
-              </button>
-              <button data-city="Seattle" class="btnCity">Seattle</button>
+              <ul id="historyUl"></ul>
             </div>
           </div>
         </div>
@@ -90,29 +69,33 @@
             Weather Results: <span id="repo-search-term"></span>
           </h2>
           <div id="results-container" class="results-list-group">
-            <div id="city" class="row cityDiv">City</div>
-            <div id="temp" class="row cityDiv">Temp</div>
-            <div id="wind" class="row cityDiv">Wind</div>
-            <div id="humidity" class="row cityDiv">Humidity</div>
-            <div id="UV-index" class="row cityDiv">UV Index</div>
+            <div id="city" class="row cityDiv"></div>
+            <div id="temp" class="row cityDiv"></div>
+            <div id="wind" class="row cityDiv"></div>
+            <div id="humidity" class="row cityDiv"></div>
+            <div class="row">
+              <div id="UV-index" class="col-2"></div>
+              <div class="col-2"></div>
+            </div>
+            <!-- <div id="UV-index" class="row cityDiv">UV Index</div> -->
 
             <!-- 5-day forecast -->
 
             <div class="row">
               <div id="day-one" class="col fiveDay">
-                <h3>Monday</h3>
+                <div class="weather-icon"></div>
               </div>
               <div id="day-two" class="col fiveDay">
-                <h3>Tuesday</h3>
+                <div class="weather-icon"></div>
               </div>
               <div id="day-three" class="col fiveDay">
-                <h3>Wednesday</h3>
+                <div class="weather-icon"></div>
               </div>
               <div id="day-four" class="col fiveDay">
-                <h3>Thursday</h3>
+                <div class="weather-icon"></div>
               </div>
               <div id="day-five" class="col fiveDay">
-                <h3>Friday</h3>
+                <div class="weather-icon"></div>
               </div>
             </div>
           </div>

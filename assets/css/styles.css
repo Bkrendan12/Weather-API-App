@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: rgb(138, 99, 48);
+  color: rgb(213, 139, 43);
 }
 
 body {
@@ -13,40 +13,65 @@ body {
   background-image: url(/Users/brendankurbkylo/Desktop/Homework/Weather-API-App/assets/images/foggy-forest.png);
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
+  margin: 50px;
+  padding: 50px;
   width: 100%;
-  height: 1800px;
+  height: 2000px;
 }
 
 .main-container {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin: 100px;
+  padding: 60px;
   width: 100%;
   border-radius: 7px;
   height: auto;
   background-color: antiquewhite;
-  opacity: 70%;
-  text-align: center;
+  opacity: 60%;
   border: solid 45px antiquewhite;
+}
+
+#UV-index {
+  font-size: 21px;
+  margin: 5px;
 }
 
 .form-container {
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.city-text-div {
+  display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.city-label-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  margin: 5px;
 }
 
 .card {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   background-color: antiquewhite;
   border: none;
+  width: 100%;
 }
 .card-header {
   background-color: antiquewhite;
@@ -54,8 +79,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .card-body {
   display: flex;
@@ -64,20 +89,31 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   background-color: antiquewhite;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.historyUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  margin-right: 45px;
 }
 
 .results {
   border: solid rgb(218, 170, 107) 3px;
   padding: 20px;
   border-radius: 7px;
-  margin: 20px;
 }
 
 .cityDiv {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
   align-items: flex-start;
   padding: 5px 15px 5px 15px;
   font-size: 25px;
@@ -85,12 +121,48 @@ body {
 
 .fiveDay {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 350px;
-  background-color: rgb(206, 158, 99);
-  border: solid 10px antiquewhite;
+  background-color: rgb(60, 42, 17);
+  border: solid 7px rgb(242, 224, 200);
+  text-align: center;
+  font-size: 20px;
+}
+
+.subtitle {
+  color: rgb(58, 43, 13);
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.favorable {
+  background-color: green;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black solid 0.5px;
+}
+
+.moderate {
+  background-color: yellow;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black solid 0.5px;
+}
+
+.severe {
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: black solid 0.5px;
 }
 
 /* buttons */
@@ -124,11 +196,13 @@ body {
   justify-content: center;
   color: antiquewhite;
   margin: 15px;
+  padding: 20px;
   height: 30px;
-  width: 80%;
+  width: 150px;
   background-color: rgb(108, 96, 25);
   outline: none;
   border: none;
+  border-radius: 7%;
 }
 
 .btnCity:hover {
@@ -139,3 +213,5 @@ body {
   transition: transform 150ms;
   transform: scale(1.03);
 }
+
+/* icons */
