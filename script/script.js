@@ -93,6 +93,7 @@ function getWeatherData(cityName) {
       index = index;
 
       element.empty(); // empty() removes all of the present content inside of the fiveDay div from the palceholder-html
+
       var dateDiv = $("<div>");
       dateDiv.text(`Date: ${moment().add(index, "days").format("M/D/YYYY")}`);
       element.append(dateDiv);
@@ -121,7 +122,7 @@ function getWeatherData(cityName) {
       element.append(imgEl);
 
       var descriptionDiv = $("<div>");
-      humidityDiv.text(
+      descriptionDiv.text(
         `${data.forecastData.list[index].weather[0].description}`
       );
       element.append(descriptionDiv);
@@ -151,9 +152,3 @@ historyUl.on("click", "button", function () {
   var cityName = $(this).text();
   getWeatherData(cityName);
 });
-
-// WHEN I click on a city in the search history
-// THEN I am again presented with current and future conditions for that city
-// Uses `localStorage` to store search history.
-// increase icon size/text size inside of line 97 setAttribute
-// center saved buttons

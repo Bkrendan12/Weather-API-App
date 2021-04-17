@@ -1,19 +1,5 @@
 # Weather-API-App
 
-## Your Task
-
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-
-Use the [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use `localStorage` to store any persistent data.
-
-## User Story
-
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
-
 ## Acceptance Criteria
 
 ```
@@ -30,62 +16,59 @@ WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 ```
 
-## Mock-Up
+/// PROJECT TITLE ///
 
-The following image shows the web application's appearance and functionality:
+Current-Weather-Application
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
+/// MOTIVATION //
 
-## Grading Requirements
+Tasked with creating a weather application where you can see the current weather as well as a five day forecast for that city. This is something anyone is able to use and is neccessary for anyone looking to make plans for the week depending on weather conditions.
 
-This homework is graded based on the following criteria:
+/// SCREENSHOTS ///
 
-### Technical Acceptance Criteria: 40%
+/// WEBSITE START ///
+![image](https://user-images.githubusercontent.com/59030105/115127007-520bfb00-9fa1-11eb-819c-6f6f547aa718.png)
 
-- Satisfies all of the above acceptance criteria plus the following:
+/// FIRST SEARCH ///
+![image](https://user-images.githubusercontent.com/59030105/115126998-4587a280-9fa1-11eb-904a-2391add3f333.png)
 
-  - Uses the OpenWeather API to retrieve weather data.
+/// BUTTONS FROM SEARCH HISTORY LIMITING TO LAST 8 SAVED SEARCHES ///
+![image](https://user-images.githubusercontent.com/59030105/115127010-5df7bd00-9fa1-11eb-893d-d0bcf40ed05e.png)
 
-  - Uses `localStorage` to store persistent data.
+Tech/framework used
 
-### Deployment: 32%
+This webpage was created using basic html, css, Javascript, moment(), jQuery and OpenWeatherMap API/Fetch.
 
-- Application deployed at live URL.
+Built with
 
-- Application loads with no errors.
+--index.html --style.css --script.js --jQuery
 
-- Application GitHub URL submitted.
+How to use?
 
-- GitHub repository that contains application code.
+This is a simple current/weekly weath application for anyone.
 
-### Application Quality: 15%
+When you open the application, you'll see a single input box where you will type in the city you want the current weather for as well as a five-day forecast for the next five days.
 
-- Application user experience is intuitive and easy to navigate.
+When you press enter or use the search button, the current weather will generate to the weather results container.
 
-- Application user interface style is clean and polished.
+Underneath the current weather, you will see a five-day forecast for the city you searched.
 
-- Application resembles the mock-up functionality provided in the homework instructions.
+Every time you make a search, the city will populate underneath the search input as a button.
 
-### Repository Quality: 13%
+You can click on each button generated to get the current weather and five-day forecast for the cities you have already searched instead of having to type it out again in the search input.
 
-- Repository has a unique name.
+The application will only allow a user to save up to eight search histroy buttons, so if you enter a nineth city, it will replace the last on your history list.
 
-- Repository follows best practices for file structure and naming conventions.
+If you close the browser for any reason, your last eight searched cities will still be in the search history window.
 
-- Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
+Link to webpage:
 
-- Repository contains multiple descriptive commit messages.
+[Current-Weather-Application](https://bkrendan12.github.io/Weather-API-App/)
 
-- Repository contains quality readme file with description, screenshot, and link to deployed application.
+Desired additions: I'd like to add a more visually pleasing style to the page, but for a basic day-to-day planner, it's extremely clean and useful.
 
-## Review
+Credits include:
 
-You are required to submit BOTH of the following for review:
+All work created and edited by Brendan Kurylo.
 
-- The URL of the functional, deployed application.
-
-- The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
----
-
-© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+UNH Bootcamp © Brendan Kurylo
