@@ -26,13 +26,13 @@ Tasked with creating a weather application where you can see the current weather
 
 /// SCREENSHOTS ///
 
-/// WEBSITE START ///
+/// WEBSITE START/FIRST SEARCH ///
 ![image](https://user-images.githubusercontent.com/59030105/115127007-520bfb00-9fa1-11eb-819c-6f6f547aa718.png)
 
-/// FIRST SEARCH ///
+/// PAGE REFRESH WITH LAST EIGHT SEARCHES ///
 ![image](https://user-images.githubusercontent.com/59030105/115126998-4587a280-9fa1-11eb-904a-2391add3f333.png)
 
-/// BUTTONS FROM SEARCH HISTORY LIMITING TO LAST 8 SAVED SEARCHES ///
+/// BUTTONS FROM SEARCH HISTORY LIMITING TO LAST 8 SAVED SEARCHES/ LAST SEARCH ///
 ![image](https://user-images.githubusercontent.com/59030105/115127010-5df7bd00-9fa1-11eb-893d-d0bcf40ed05e.png)
 
 Tech/framework used
